@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<script language="javascript" src="./lib/p5.js"></script>
+	<script language="javascript" src="./lib/p5.sound.js"></script>
+	<script language="javascript" src="GPsketch.js"></script>
+	 <link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./lib/p5.dom.js"></script>
+	<title> Adam November </title>
+	
+</head>
+
+<body>
+
+
+	<div id = "sounds">
+	
+	
+		<h2> Sounds </h2>
+		<input id = "volume" type = "range" min = 0 max = 100>VOLUME</input><br>
+		<button id = "rock" onclick = "acoustic()">ROCK</button><br>
+		<button id = "hiphip" onclick = "hiphop()">HIP HOP</button><br>
+		<button id = "electronic" onclick = "electronic()">ELECTRONIC</button><br>
+		<input id = "reverb" type = "range" min = 0.0 max = 100.0 > REVERB</button><br>
+		
+	
+	</div>
+<div id = "left">
+	<div id = "time">
+		<button id = "tap" onclick = "tap()">TAP</button><br>
+		<input id = "tempo" type = "range" min = 60 max = 320>TEMPO</input><br>
+		<input id = "slices" type = "range" min = 2 max = 16>SLICES</input><br>
+		<input id = "swing" type = "range"min = 0 max = 50>SWING</input><br>
+	
+	</div>
+
+
+	
+	<div id = "sets">
+	
+		<button id = "reset" onclick = "reset()">PLAIN</button><br>
+		<button id = "boots" onclick = "bootsNcats()">BOOTS N CATS</button><br>
+		<button id = "uhn" onclick = "uhnTiss()">UHN TISS</button><br>
+		<button id = "levee" onclick = "levee()">LEVEE</button><br>
+		<button id = "random" onclick = "randomSet()">RANDOM</button><br>
+	
+	</div><br>
+	
+		
+	
+	
+</div>
+</body>
+
+
+
+
+</html>
