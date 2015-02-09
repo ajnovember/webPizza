@@ -36,18 +36,18 @@ var reverbAmt;
 function setup(){
 	reverb = new p5.Reverb();
 	reverbAmt = 0;
-	hat1 = loadSound('/anm2/sf/03hhclosed_acoustic.wav');
-	kick1 = loadSound('/anm2/sf/KICK_05H.wav');
-	snare1 = loadSound('/anm2/sf/02snare_acoustic.wav');
-	tamb1 = loadSound('/anm2/sf/06ride_acoustic.wav');
-	hat2 = loadSound('/anm2/sf/03hhclosed_hip-hop.wav');
-	kick2 = loadSound('/anm2/sf/01kick_hip-hop.wav');
-	snare2 = loadSound('/anm2/sf/02snare_hip-hop.wav');
-	tamb2 = loadSound('/anm2/sf/06ride_hip-hop.wav');
-	hat3 = loadSound('/anm2/sf/04hhopen_techno.wav');
-	kick3 = loadSound('/anm2/sf/KICK_14H.wav');
-	snare3 = loadSound('/anm2/sf/02snare_techno.wav');
-	tamb3 = loadSound('/anm2/sf/05clap_techno.wav');
+	hat1 = preload('/anm2/sf/03hhclosed_acoustic.wav');
+	kick1 = preload('/anm2/sf/KICK_05H.wav');
+	snare1 = preload('/anm2/sf/02snare_acoustic.wav');
+	tamb1 = preload('/anm2/sf/06ride_acoustic.wav');
+	hat2 = preload('/anm2/sf/03hhclosed_hip-hop.wav');
+	kick2 = preload('/anm2/sf/01kick_hip-hop.wav');
+	snare2 = preload('/anm2/sf/02snare_hip-hop.wav');
+	tamb2 = preload('/anm2/sf/06ride_hip-hop.wav');
+	hat3 = preload('/anm2/sf/04hhopen_techno.wav');
+	kick3 = preload('/anm2/sf/KICK_14H.wav');
+	snare3 = preload('/anm2/sf/02snare_techno.wav');
+	tamb3 = preload('/anm2/sf/05clap_techno.wav');
 
 	
 	canvas = createCanvas(canvasWidth, canvasHeight);
@@ -171,9 +171,9 @@ function mousePressed(){
 }
 
 function updatePepperonis(beat){
-	console.log("made it");
+	//console.log("made it");
 	for(var i = 0; i < slices; i ++){
-	console.log("made it2");
+	//console.log("made it2");
 		if (i == beat){
 			var rad = 50;
 		}
@@ -300,7 +300,7 @@ function tap(){
 }
 function tapUp(){ 
 	current = millis();
-	console.log(current);
+	//console.log(current);
 	
 	
 	}
@@ -309,7 +309,7 @@ function tapDown(){
 	var diff = millis() - current;
 	newTempo = (30000.0/diff)*2;
 	document.getElementById("tempo").value = newTempo;
-	console.log(newTempo);
+//	console.log(newTempo);
 	
 }
 
