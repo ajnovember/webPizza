@@ -20,6 +20,7 @@ var volume, volumeSlider;
 var slices;
 //var slicesSlider;
 
+
 var hat1,kick1,snare1,tamb1;
 var hat2,kick2,snare2,tamb2;
 var hat3,kick3,snare3,tamb3;
@@ -392,7 +393,7 @@ function randomSet(){
 
 function playSound(soundfile){
 	reverbAmt = document.getElementById("reverb").value/50.0;
-	reverb.process(soundfile, 2, 1.5);	
+	reverb.process(soundfile, 2.4, 1.5);	
 	reverb.amp(reverbAmt);
 	soundfile.play();
 	
